@@ -1,0 +1,18 @@
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+    aria-controls="offcanvasExample">
+    Sidebar
+</button>
+
+<div class="offcanvas bg-dark text-white offcanvas-start" tabindex="-1" id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+        <h3 class="offcanvas-title ms-2" id="offcanvasExampleLabel">Company</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="d-flex flex-column ms-4 mt-4 text-center">
+        <button routerLink="/home" class="btn-hover btn mb-3 bg-black text-white w-50">Home</button>
+        <button routerLink="/employees" class="btn-hover btn mb-3 bg-black text-white w-50">Manage Employees</button>
+        <button routerLink="/products" class="btn-hover btn mb-3 bg-black text-white w-50">Manage Products</button>
+        <button routerLink="/login" class="btn-hover btn mt-4 bg-danger text-white w-50">Logout</button>
+    </div>
+</div>

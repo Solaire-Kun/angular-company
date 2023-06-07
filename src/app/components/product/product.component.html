@@ -1,0 +1,16 @@
+<app-sidebar></app-sidebar>
+<div class="container">
+    <div class="row">
+        <div *ngFor="let product of products" class="mt-4 col">
+            <div class="card bg-dark text-white shadow" style="width: 18rem;">
+                <img [src]=product.image class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{product.name}}</h5>
+                    <p class="card-text">{{product.description}}</p>
+                    <p class="card-text">{{product.price}}€</p>
+                    <a (click)="checkDetails(product)" class="btn btn-primary">Check Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

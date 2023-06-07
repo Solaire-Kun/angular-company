@@ -1,0 +1,9 @@
+.btn-hover {
+    transform: scale(1.0);
+    transition: .2s;
+}
+
+.btn-hover:hover {
+    transform: scale(1.2);
+    transition: .2s;
+}

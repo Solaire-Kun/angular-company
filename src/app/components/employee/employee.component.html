@@ -1,0 +1,14 @@
+<app-sidebar></app-sidebar>
+<div class="container">
+    <div class="row">
+        <div *ngFor="let employee of employees" class="mt-4 col">
+            <div class="card bg-dark text-white shadow" style="width: 18rem;">
+                <img [src]=employee.image class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{employee.name}} {{employee.surname}}</h5>
+                    <a (click)="checkDetails(employee)" class="btn btn-primary">Check Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

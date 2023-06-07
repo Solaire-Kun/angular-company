@@ -1,0 +1,18 @@
+<main>
+    <div class="container">
+        <h1 class="mt-4 text-center">Login</h1>
+        <form
+            class="bg-dark d-flex flex-column align-items center mx-auto w-50 border rounded shadow border-black mt-4 p-4">
+            <div class="mb-3">
+                <label class="form-label">Username</label>
+                <input required type="text" class="form-control bg-black text-white border-black">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input required type="password" class="form-control bg-black text-white border-black"
+                    id="exampleInputPassword1">
+            </div>
+            <button type="submit" (click)="login($event)" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+</main>

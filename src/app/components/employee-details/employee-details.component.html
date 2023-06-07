@@ -1,0 +1,26 @@
+<app-sidebar></app-sidebar>
+<div class="container">
+    <div class="row">
+        <div *ngIf="employee" class="mt-4 col">
+            <div class="mb-4 card bg-dark mx-auto text-white shadow" style="width: 50vh;">
+                <img [src]=employee.image class="card-img-top" alt="...">
+                <div class="card-body">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="bg-black text-white border-black form-control" [value]="employee.name">
+
+                    <label class="mt-4 form-label">Surname</label>
+                    <input type="text" class="bg-black text-white border-black form-control" [value]="employee.surname">
+
+                    <label class="mt-4 form-label">Age</label>
+                    <input type="number" class="bg-black text-white border-black form-control" [value]="employee.age">
+
+                    <label class="mt-4 form-label">Number</label>
+                    <input type="number" class="bg-black text-white border-black form-control"
+                        [value]="employee.number">
+
+                    <button class="mt-4 btn btn-primary">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

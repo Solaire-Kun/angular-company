@@ -1,0 +1,30 @@
+<app-sidebar></app-sidebar>
+<div class="container">
+    <div class="row">
+        <div *ngIf="product" class="mt-4 col">
+            <div class="mb-4 card bg-dark mx-auto text-white shadow" style="width: 50vh;">
+                <img [src]=product.image class="card-img-top" alt="...">
+                <div class="card-body">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="bg-black text-white border-black form-control" [value]="product.name">
+
+                    <label class="mt-4 form-label">Description</label>
+                    <input type="text" class="bg-black text-white border-black form-control"
+                        [value]="product.description">
+
+                    <label class="mt-4 form-label">Release Date</label>
+                    <p>{{product.release}}</p>
+
+                    <label class="form-label">Quantity</label>
+                    <input type="text" class="bg-black text-white border-black form-control" [value]="product.quantity">
+
+                    <label class="mt-4 form-label">Price</label>
+                    <input type="number" class="mb-4 bg-black text-white border-black form-control"
+                        [value]="product.price">
+
+                    <button class="mt-4 btn btn-primary">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
