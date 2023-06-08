@@ -1,9 +1,51 @@
-.btn-hover {
-    transform: scale(1.0);
-    transition: .2s;
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 58px 0 0;
+    width: 200px;
+    z-index: 600;
+    transition: 0.5s;
 }
 
-.btn-hover:hover {
-    transform: scale(1.2);
-    transition: .2s;
+a {
+    text-decoration: none;
+}
+
+.item {
+    transform: scale(1.0);
+    transition: 0.1s;
+}
+
+.item:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
+@media (max-width: 1600px) {
+    .sidebar {
+        width: 50px;
+    }
+
+    .list-group,
+    h2 {
+        display: none;
+    }
+
+    .sidebar:hover>.list-group {
+        display: flex;
+        transition: 0.5s;
+    }
+
+    .sidebar:hover>h2 {
+        display: block;
+        transition: 0.5s;
+    }
+
+    .sidebar:hover {
+        width: 240px;
+        transition: 0.5s;
+    }
 }
